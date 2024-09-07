@@ -1,44 +1,143 @@
-body{padding: 0;
-margin: 0;}
+/* General Styles */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
 
-.H{
-    border: 2px solid black;
+/* Header Section */
+.H {
     height: 100vh;
     width: 100%;
-    background-image:url(https://wallpapercave.com/wp/wp4146369.jpg);
+    background-image: url(https://wallpapercave.com/wp/wp4146369.jpg);
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
     opacity: 0.88;
-position:absolute;
-    margin-bottom: 30px;
-  padding-top: 100px;
-   
-    
+    color: white;
 }
-.nav{
+
+/* Navigation Bar */
+.nav {
     display: flex;
-    flex-direction: row;
-   justify-content: space-around;
-    
-    width: 100%;
-    border: 1px solid rgb(250, 241, 241);
-    border-radius: 5px;
-    z-index: 100;
-    position: fixed;
-    color:white;
- 
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
+.nav .items {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color 0.3s;
+}
 
-.header{
-    margin-top: 10%;
-    margin-left: 39vw;
-    margin-bottom: 300px;
+.nav .items:hover {
+    color: #ffdd57;
+}
+
+/* Header Title */
+.header {
+    text-align: center;
+    margin-top: 30vh;
+}
+
+.header h1 {
     font-size: 60px;
-    font-weight: 500;
-    color: rgb(222, 217, 217);
-    
 }
 
-    
+.header h3 {
+    font-size: 24px;
+    color: #ddd;
+}
+
+/* About Us Section */
+.about {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Products Section */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.base {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.am {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.attributes {
+    padding: 10px;
+    color: #555;
+}
+
+.description {
+    padding: 10px;
+    color: #333;
+    text-align: left;
+}
+
+.button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: #5bc0de;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #31b0d5;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #5bc0de;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .social {
+    margin-top: 10px;
+}
