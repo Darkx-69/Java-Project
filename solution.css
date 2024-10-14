@@ -1,0 +1,136 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+   
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.video-section {
+    width: 50vw;
+    height: auto;
+    overflow: hidden;
+}
+
+.video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 8px;
+}
+
+.text-section {
+    width: 500px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.text-section p {
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 40px 0;
+    color: #333;
+}
+
+.solutions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.solution-item {
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.solution-item:hover {
+    transform: scale(1.05);
+}
+
+.solution-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.solution-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.chart-section {
+    margin-top: 50px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect for Video */
+.video:hover {
+    transform: scale(1.05);
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .video-section {
+        width: 90vw;
+        height: auto;
+    }
+
+    .solutions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .solution-item {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
