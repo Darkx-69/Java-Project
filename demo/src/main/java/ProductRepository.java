@@ -1,4 +1,3 @@
-package com.solarx.dashboard;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 

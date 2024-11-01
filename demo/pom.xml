@@ -8,6 +8,14 @@
     <artifactId>demo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- Parent POM for Spring Boot -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.4</version> <!-- Replace with the latest Spring Boot version -->
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -30,6 +38,7 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version> <!-- Specify MySQL Connector version -->
             <scope>runtime</scope>
         </dependency>
 
